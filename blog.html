@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sayed's blog using Vue js</title>
+</head>
+<body>
+    <nav class="nav-container">
+        <div class="nav-container__inner">
+          <a class="home-link"><img src="img/blog.png" alt="web-dev logo"></a>
+          <ul class="top-nav active">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about_me.html">About Me</a></li>
+            <li><a href="my_work.html">My Work</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+          </ul>
+          <i class="fa-solid fa-bars bar"></i>
+        </div>  
+      </nav>
+
+     <section id="allAboutBlogs">
+<div>
+    <header>
+        <img src="img/top10.jpeg" alt="blogs interesting" style="width: 100%">
+        <h1 style="margin-top: 40px">{{ h1 }}</h1>
+        <h2>{{ h2 }}</h2>
+        <br>
+        <p> {{para}}</p>
+    </header>
+</div>
+
+    <!-- all about me -->
+    <section class="all-about-me my-work-div">
+        <div class="qr"><h2>{{blog1Heading}}</h2><p>{{blog1description}}</p>
+           <a :href='blog1Link'>Learn More</a> </div>
+           <div class="qr"><h2>{{blog2Heading}}</h2><p>{{blog2description}}</p>
+            <a :href='blog2Link'>Learn More</a> </div>
+            <div class="qr"><h2>{{blog3Heading}}</h2><p>{{blog3description}}</p>
+                <a :href='blog3Link'>Learn More</a> </div>
+        </section>
+     </section>
+     <footer>
+        <section class="footer">
+            <h2>Follow Me On</h2>
+            <ul class="top-nav footer-icon">
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram-square"></i></a></li>
+                <li><a href="https://twitter.com/twitter"><i class="fa-brands fa-twitter"></i></a></li>
+               
+              </ul>
+              <div style="margin-top: 20px">
+                  <p>&copy; 2022 Ahmad Nizami</p>
+              </div>
+        </section>
+    </footer>
+<!-- <div id="app">{{ h1 }}</div> -->
+<script src="https://unpkg.com/vue@3"></script>
+<script>
+  const { createApp } = Vue
+
+  createApp({
+    data() {
+      return {
+        h1: 'Would you like to learn more about web development?',
+        h2: 'Do you love creating amazing websites',
+       
+        para:'Are you interested in learning more about the development process?  These are blogs you need to follow and read',
+        blog1Heading:'A List Apart',
+        blog1description:'A List Apart is a webzine that’s been active for 23 years now, with a focus on web design and development, web content and its meaning, best practices and standards of modern web. ',
+        blog1Link:'https://alistapart.com/',
+
+        blog2Heading:'Codrops',
+        blog2description:'Codrops is a fantastic source for front end developers, full of inspiration, useful tutorials, free resources that we all love, and articles with practical advice.',
+        blog2Link:'https://tympanus.net/codrops/',
+
+
+        blog3Heading:'CSS Author ',
+        blog3description:'CSS Author is a front end coding blog that’s a goldmine of resources for web developers and web designers alike, with occasional publications useful for graphic designers and content writers as well.',
+        blog3Link:'https://cssauthor.com/',
+        
+    }
+
+    }
+  }).mount('#allAboutBlogs')
+</script>
+<script src="java.js"></script>
+</body>
+</html>

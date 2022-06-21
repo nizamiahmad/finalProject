@@ -1,0 +1,345 @@
+:root {
+    --first-color: #f7aa00;
+    --second-color: #235784; 
+    --third-color: #40a8c4; 
+    --forth-color: #bcdbdf; 
+    --fifth-color:black;
+    --sixth-color:#FAD7A0;
+    --white: white;
+
+  }
+  body{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background-color: white;
+  }
+  p{
+    font-size: 18px;
+  }
+h1{
+  font-size: 40px;
+  text-align: center;
+}
+  * {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+  }
+nav{
+  background-color: white;
+}
+  .nav-container__inner .bar{
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 40px;
+    display: none;
+    cursor:pointer;
+  }
+  .nav-container__inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0.625em 0;
+  }
+  
+  .home-link > img {
+    width: 200px;
+    border-radius: 5px;
+   
+  }
+  
+  .top-nav {
+    display: flex;
+    list-style-type: none;
+    margin-top: 20px;
+  }
+  .top-nav > li + li {
+    margin-left: 0.625em;
+
+  }
+  .top-nav a {
+    display: block;
+    padding: 0.3em 1.25em;
+    color: var(--fifth-color);
+    background: var();
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 23px;
+    transition: 0.3s;
+  }
+  .top-nav a:hover {
+    background-color: var(--third-color);
+    color: var(--white);
+  }
+ /* home design */
+ .hero-background img{
+   width: 100%;
+   height: 550px;
+   position: relative;
+ }
+ #HomeHeroHover{
+  position: absolute;
+  top: 200px;
+  right: 50px;
+  z-index: 100;
+  height: 300px;
+  width: 50%;
+  background-color: black;
+  opacity: 0.7;
+  padding: 20px;
+
+ }
+ #HomeHeroHover p{
+font-size: 100px;
+font-weight: bold;
+color: white;
+ }
+ .home-main{
+   margin: 90px;
+   display: grid;
+   grid-template-columns: 35% 65% ;
+   grid-gap: 30px;
+ }
+ .home-main h1,p, h2{
+text-align: center;
+ }
+
+ .home-main div a{
+  text-decoration: none;
+  color: white;
+ }
+ .home-main div button{
+  border: none;
+  background-color: var(--third-color);
+  padding: 15px;
+ 
+  margin-top: 50px;
+ }
+ .all-about-me{
+   margin: 0 auto;
+   display:grid;
+   justify-content: center;
+   grid-template-columns: repeat(3,30%);
+   grid-column-gap: 30px;
+ }
+ .all-about-me div{
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  padding: 50px;
+ }
+ .all-about-me div img{
+   width: 100%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 20px;
+ }
+ .all-about-me div a{
+padding: 10px;
+text-decoration: none;
+width: 100px;
+background-color: var(--third-color);
+border: none;
+color: white;
+display: block;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+cursor: pointer;
+
+ }
+ .all-about-me div h2,p{
+margin-bottom: 20px;
+ }
+ .interesting-facts{
+   margin-top: 50px;
+   display: grid;
+   grid-template-columns: 1fr;
+   justify-content: center;
+ 
+ }
+ .interesting-facts h1, p{
+   margin-bottom: 20px;
+ }
+ .interesting-facts iframe,  footer .footer-icon{
+  display: block;
+margin-left: auto;
+margin-right: auto;
+ }
+ /* about page design */
+ .about-page{
+   display: grid;
+
+   padding:50px 100px;
+ 
+ }
+
+ .EduContainer {
+  position: relative;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.Edu_image {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.EduContainer:hover .overlay {
+  height: 100%;
+}
+
+.edu_text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+ table{
+   width: 100%;
+ }
+ td{
+   font-size: 20px;
+   padding: 10px;
+ }
+ tr {background-color: #f2f2f2;}
+
+.edu{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 50px 100px;
+  grid-gap: 20px;
+
+}
+
+
+/* My work design page */
+
+.my-work-page .workPageHero{
+ 
+ padding-bottom: 50px;
+}
+.my-work-div{
+display: grid;
+grid-template-columns: repeat(3,30%);
+grid-gap: 30px;
+}
+
+/* contact me page */
+.contact-me{
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+margin-top: 40px;
+}
+.main-of-contact{
+  background-color: var(--sixth-color);
+  padding: 50px;
+}
+.contact-me img{
+  width: 100%;
+  height: 500px;
+}
+.contact-me ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+.contact-me ul li a {
+  text-decoration: none;
+  color: black;
+ 
+  font-size: 30px;
+}
+.contact-me ul li a i{
+  font-size: 40px;
+  border: 1px solid rgba(0, 0, 255, .2);
+  padding: 10px;
+  color: var(--second-color);
+}
+
+ /* Small Screens */
+
+
+
+
+
+ /* all about footer design */
+ footer{
+  margin-top: 100px;
+   padding: 20px;
+   background-color: rgba(0, 0, 255, .2);
+ }
+ footer .footer-icon{
+   display: grid;
+   justify-content: center;
+   grid-template-columns: 0fr 0fr 0fr;
+ }
+ footer .footer-icon li a i{
+   font-size: 30px;
+   color: var(--second-color);
+ }
+ footer .footer-icon li a i:hover{
+ 
+   font-size: 60px;
+ }
+
+
+
+ @media only screen and (max-width: 650px) {
+  .top-nav {
+    flex-direction: column;
+  text-align: center;
+    margin-top: 80px;
+    margin-right: 90px;
+    width: 100%;
+    display: none;
+  }
+  .active{
+    display: block;
+  }
+  #HomeHeroHover{
+    height: 100px;
+   right: 10px;
+  }
+  #HomeHeroHover p{
+font-size: 40px;
+  }
+  #HomeMainPic{
+    height: 300px;
+  }
+  .home-main{
+    grid-template-columns: 100%;
+  }
+  .edu{
+    grid-template-columns: 100%;
+  }
+ .edu_text p{
+  font-size: 15px;
+ }
+  .nav-container__inner .bar{
+    display: inline-block;
+  }
+  .all-about-me{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .contact-me{
+    grid-template-columns: 100%;
+  }
+}
