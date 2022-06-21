@@ -252,11 +252,13 @@ margin-top: 40px;
 .main-of-contact{
   background-color: var(--sixth-color);
   padding: 50px;
+
 }
 .contact-me img{
   width: 100%;
   height: 500px;
 }
+
 .contact-me ul li {
   list-style-type: none;
   padding: 10px;
@@ -264,14 +266,17 @@ margin-top: 40px;
 .contact-me ul li a {
   text-decoration: none;
   color: black;
- 
+  padding-inline-start: 40px;
   font-size: 30px;
+  align-self: left;
 }
 .contact-me ul li a i{
   font-size: 40px;
   border: 1px solid rgba(0, 0, 255, .2);
   padding: 10px;
   color: var(--second-color);
+  margin-right: 50px;
+  
 }
 
  /* Small Screens */
