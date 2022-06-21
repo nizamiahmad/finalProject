@@ -315,14 +315,7 @@ margin-top: 40px;
     display: block;
   }
   #HomeHeroHover{
-    height: 100px;
-   right: 10px;
-  }
-  #HomeHeroHover p{
-font-size: 40px;
-  }
-  #HomeMainPic{
-    height: 300px;
+    display: none;
   }
   .home-main{
     grid-template-columns: 100%;
